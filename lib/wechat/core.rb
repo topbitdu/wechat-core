@@ -1,4 +1,4 @@
-require "wechat/core/version"
+require 'wechat/core/version'
 
 module Wechat
   module Core

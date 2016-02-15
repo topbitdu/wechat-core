@@ -1,6 +1,7 @@
-# Wechat::Core
+# Wechat::Core 微信核心库
 
-The Wechat Core Library is a code base to handle the Wechat Core API calls.
+The Wechat Core Library is a code base to call the Wechat Core APIs.
+微信核心库用于调用微信核心API。
 
 ## Installation
 
@@ -20,7 +21,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+response = ::Wechat::Core::AccessToken.load Rails.application.secrets.wechat_app_id, Rails.application.secrets.wechat_app_secret
+if response.present?
+  access_token = response['access_token']
+  expires_in   = response['expires_in']
+end
+```
 
 ## Development
 

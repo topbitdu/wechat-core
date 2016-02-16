@@ -2,19 +2,19 @@
 
 ## v0.1
 
-- Common module
-- Access Token wrapper class
+1. Common module
+2. Access Token wrapper class
 
 ## v0.2
 
-- Server Address wrapper class
-- Tiny Link wrapper class
+1. Server Address wrapper class
+2. Tiny Link wrapper class
 
 ## v0.3
 
-- Follower wrapper class
-- Follower Profile wrapper class
+1. Follower wrapper class
+2. Follower Profile wrapper class
 
 # v0.4
 
-- Logo wrapper class
+1. Logo wrapper class

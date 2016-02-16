@@ -1,5 +1,8 @@
 # Wechat::Core 微信核心库
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+[![Gem Version](https://badge.fury.io/rb/wechat-core.svg)](https://badge.fury.io/rb/wechat-core)
+
 The Wechat Core Library is a code base to call the Wechat Core APIs.
 微信核心库用于调用微信核心API。
 
@@ -21,6 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
+Get the [Wechat Access Token](http://mp.weixin.qq.com/wiki/14/9f9c82c1af308e3b14ba9b973f99a8ba.html)
 ```ruby
 response = ::Wechat::Core::AccessToken.load Rails.application.secrets.wechat_app_id, Rails.application.secrets.wechat_app_secret
 if response.present?

@@ -1,5 +1,9 @@
 module Wechat::Core::Common
 
+  LANGUAGE_SIMPLIFIED_CHINESE   = 'zh_CN'.freeze
+  LANGUAGE_TRANDITIONAL_CHINESE = 'zh_TW'.freeze
+  LANGUAGE_ENGLISH              = 'en'.freeze
+
   # http://mp.weixin.qq.com/wiki/17/fa4e1434e57290788bde25603fa2fcbd.html
   # $('table#ec-t').find('tr').each(function(index, line)
   # {

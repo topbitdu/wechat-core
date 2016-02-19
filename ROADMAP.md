@@ -12,5 +12,5 @@
 1. Follower wrapper class
 2. Follower Profile wrapper class
 
-# v0.4
+## v0.4
 1. Logo wrapper class

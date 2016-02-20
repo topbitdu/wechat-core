@@ -11,6 +11,5 @@ require 'wechat/core/follower_profile'
 
 module Wechat
   module Core
-    # Your code goes here...
   end
 end

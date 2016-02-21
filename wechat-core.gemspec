@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = [ 'topbit.du@gmail.com' ]
 
   spec.summary       = %q{Wechat Core Library 微信核心库}
-  spec.description   = %q{The Wechat Core Library is a code base to call the core Wechat APIs, such as fetching Access Token, and fetching Follower Profile. 微信核心库用于调用微信核心API，例如获取访问令牌，获取关注者的信息。}
+  spec.description   = %q{Wechat Core Library is a wrapper for calling the core Wechat APIs. 微信核心库封装了微信核心API的调用。}
   spec.homepage      = 'https://github.com/topbitdu/wechat-core'
   spec.license       = 'MIT'
 

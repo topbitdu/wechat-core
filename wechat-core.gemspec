@@ -4,16 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wechat/core/version'
 
 Gem::Specification.new do |spec|
-
-  spec.name          = 'wechat-core'
-  spec.version       = Wechat::Core::VERSION
-  spec.authors       = [ 'Topbit Du' ]
-  spec.email         = [ 'topbit.du@gmail.com' ]
-
-  spec.summary       = %q{Wechat Core Library 微信核心库}
-  spec.description   = %q{Wechat Core Library is a wrapper for calling the core Wechat APIs. 微信核心库封装了微信核心API的调用。}
-  spec.homepage      = 'https://github.com/topbitdu/wechat-core'
-  spec.license       = 'MIT'
+  spec.name        = 'wechat-core'
+  spec.version     = Wechat::Core::VERSION
+  spec.authors     = [ 'Topbit Du' ]
+  spec.email       = [ 'topbit.du@gmail.com' ]
+  spec.summary     = 'Wechat Core Library 微信核心库'
+  spec.description = 'Wechat Core Library is a wrapper for calling the core Wechat APIs. 微信核心库封装了微信核心API的调用。'
+  spec.homepage    = 'https://github.com/topbitdu/wechat-core'
+  spec.license     = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

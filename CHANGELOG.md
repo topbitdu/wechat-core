@@ -11,3 +11,6 @@
 ## v0.3
 1. Follower wrapper class
 2. Follower Profile wrapper class
+
+## v0.4
+1. Deprecate the Access Token ::load method, use the Access Token ::create method instead

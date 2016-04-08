@@ -48,10 +48,13 @@ end
 ```ruby
 response = Wechat::Core::Follower.index access_token
 if response.present? && 0==response['errcode'].to_i
-  total = response['total']
-  count = response['count']
-  data  = response['data']
+  total        = response['total']
+  count        = response['count']
   next_open_id = response['next_openid']
+  data         = response['data']
+  data['openid'].each do |open_id|
+    # Show open_id
+  end
 else
   # Show response['errmsg']
 end
@@ -61,10 +64,13 @@ end
 ```ruby
 response = Wechat::Core::Follower.index access_token, next_open_id
 if response.present? && 0==response['errcode'].to_i
-  total = response['total']
-  count = response['count']
-  data  = response['data']
+  total        = response['total']
+  count        = response['count']
   next_open_id = response['next_openid']
+  data         = response['data']
+  data['openid'].each do |open_id|
+    # Show open_id
+  end
 else
   # Show response['errmsg']
 end

@@ -19,4 +19,4 @@
 1. Logo wrapper class
 
 ## v1.0
-1. Removed the depreated classes and methods.
+1. Removed the depreated classes and methods

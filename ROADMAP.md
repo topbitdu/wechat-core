@@ -15,8 +15,9 @@
 ## v0.4
 1. Deprecate the Access Token ::load method, use the Access Token ::create method instead
 
-## v0.5
-1. Logo wrapper class
-
 ## v1.0
-1. Removed the depreated classes and methods
+1. Improve the Follower & Follower Profile wrapper class to support the Keyword Argument 
+2. Removed the depreated classes and methods
+
+## v1.1
+1. Logo wrapper class

@@ -12,7 +12,7 @@ class Wechat::Core::Follower
   #   data: { openid: [ <OPEN_ID_1>, <OPEN_ID_2>, ... ] },
   #   next_openid: <NEXT_OPEN_ID>
   # }
-  def self.index(access_token, next_open_id = nil)
+  def self.index(access_token, next_open_id: nil)
 
     options = { access_token: access_token }
     options[:next_openid] = next_open_id if next_open_id.present?

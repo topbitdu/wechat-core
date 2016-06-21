@@ -26,7 +26,7 @@ class Wechat::Core::FollowerProfile
   #     }
   #   ]
   # }
-  def self.index(access_token, open_ids, language = 'zh_CN')
+  def self.index(access_token, open_ids, language: 'zh_CN')
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }
     message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", { user_list: followers }
     message.body
@@ -51,7 +51,7 @@ class Wechat::Core::FollowerProfile
   #   remark:         <REMARK>,
   #   groupid:        <GROUP_ID>
   # }
-  def self.load(access_token, open_id, language = 'zh_CN')
+  def self.load(access_token, open_id, language: 'zh_CN')
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/user/info',
       {
         access_token: access_token,

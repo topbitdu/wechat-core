@@ -31,6 +31,9 @@ class Wechat::Core::AccessToken
   # }
   # The ACCESS_TOKEN is 107 characters in 2015.
   def self.create(app_id, app_secret)
+
+    raise ArgumentError.new('The app_id argument is required.') if app_id.blank?
+
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/token',
       {
         grant_type: 'client_credential',

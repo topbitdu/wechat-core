@@ -14,6 +14,8 @@ class Wechat::Core::Follower
   # }
   def self.index(access_token, next_open_id: nil)
 
+    raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
+
     options = { access_token: access_token }
     options[:next_openid] = next_open_id if next_open_id.present?
 

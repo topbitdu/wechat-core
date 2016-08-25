@@ -8,6 +8,9 @@ class Wechat::Core::ServerAddress
   # Return hash format if success:
   # { ip_list: [ <IP_ADDRESS_1>, <IP_ADDRESS_2>, ... ] }
   def self.index(access_token)
+
+    raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
+
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/getcallbackip', { access_token: access_token }
     message.body
   end

@@ -140,4 +140,8 @@ module Wechat::Core::Common
       9001036 => '查询起始值begin不合法'
     }
 
+  def assert_present!(name, value)
+    raise ArgumentError.new("The #{name} argument is required.") if value.blank?
+  end
+
 end

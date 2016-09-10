@@ -2,6 +2,8 @@ require 'jsonclient'
 
 class Wechat::Core::AccessToken
 
+  extend Wechat::Core::Common
+
   # 获取 Access Token
   # http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html
   #
@@ -32,7 +34,8 @@ class Wechat::Core::AccessToken
   # The ACCESS_TOKEN is 107 characters in 2015.
   def self.create(app_id, app_secret)
 
-    raise ArgumentError.new('The app_id argument is required.') if app_id.blank?
+    assert_present! :app_id, app_id
+    #raise ArgumentError.new('The app_id argument is required.') if app_id.blank?
 
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/token',
       {

@@ -35,6 +35,7 @@ class Wechat::Core::AccessToken
   def self.create(app_id, app_secret)
 
     assert_present! :app_id, app_id
+    assert_present! :app_secret, app_secret
     #raise ArgumentError.new('The app_id argument is required.') if app_id.blank?
 
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/token',

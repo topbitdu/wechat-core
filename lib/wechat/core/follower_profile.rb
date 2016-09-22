@@ -2,6 +2,8 @@ require 'jsonclient'
 
 class Wechat::Core::FollowerProfile
 
+  extend Wechat::Core::Common
+
   # 批量获取用户基本信息
   # http://mp.weixin.qq.com/wiki/14/bb5031008f1494a59c6f71fa0f319c66.html#.E6.89.B9.E9.87.8F.E8.8E.B7.E5.8F.96.E7.94.A8.E6.88.B7.E5.9F.BA.E6.9C.AC.E4.BF.A1.E6.81.AF
   # 最多支持一次拉取100条。
@@ -28,7 +30,8 @@ class Wechat::Core::FollowerProfile
   # }
   def self.index(access_token, open_ids, language: 'zh_CN')
 
-    raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
+    assert_present! :access_token, access_token
+    #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }
     message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", { user_list: followers }

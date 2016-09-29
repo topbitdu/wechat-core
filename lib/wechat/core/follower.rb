@@ -2,6 +2,8 @@ require 'jsonclient'
 
 class Wechat::Core::Follower
 
+  extend Wechat::Core::Common
+
   # 获取关注者列表
   # http://mp.weixin.qq.com/wiki/0/d0e07720fc711c02a3eab6ec33054804.html
   #
@@ -14,7 +16,8 @@ class Wechat::Core::Follower
   # }
   def self.index(access_token, next_open_id: nil)
 
-    raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
+    assert_present! :access_token, access_token
+    #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     options = { access_token: access_token }
     options[:next_openid] = next_open_id if next_open_id.present?

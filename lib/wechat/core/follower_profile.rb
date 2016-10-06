@@ -31,6 +31,7 @@ class Wechat::Core::FollowerProfile
   def self.index(access_token, open_ids, language: 'zh_CN')
 
     assert_present! :access_token, access_token
+    assert_present! :open_ids, open_ids
     #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }

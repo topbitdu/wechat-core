@@ -12,7 +12,6 @@ class Wechat::Core::ServerAddress
   def self.index(access_token)
 
     assert_present! :access_token, access_token
-    raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/getcallbackip', { access_token: access_token }
     message.body

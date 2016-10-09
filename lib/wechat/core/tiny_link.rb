@@ -23,6 +23,7 @@ class Wechat::Core::TinyLink
   def self.create(access_token, link)
 
     assert_present! :access_token, access_token
+    assert_present! :link, link
     #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/shorturl?access_token=#{access_token}",

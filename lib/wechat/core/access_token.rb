@@ -34,7 +34,7 @@ class Wechat::Core::AccessToken
   # The ACCESS_TOKEN is 107 characters in 2015.
   def self.create(app_id, app_secret)
 
-    assert_present! :app_id, app_id
+    assert_present! :app_id,     app_id
     assert_present! :app_secret, app_secret
 
     message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/token',

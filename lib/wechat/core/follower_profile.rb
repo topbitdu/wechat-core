@@ -28,7 +28,7 @@ class Wechat::Core::FollowerProfile
   #     }
   #   ]
   # }
-  def self.index(access_token, open_ids, language: 'zh_CN')
+  def self.index(access_token, open_ids, language: Wechat::Core::Common::LANGUAGE_SIMPLIFIED_CHINESE)
 
     assert_present! :access_token, access_token
     assert_present! :open_ids, open_ids

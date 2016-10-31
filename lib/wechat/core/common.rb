@@ -1,3 +1,5 @@
+require 'jsonclient'
+
 module Wechat::Core::Common
 
   LANGUAGE_SIMPLIFIED_CHINESE   = 'zh_CN'.freeze
@@ -142,6 +144,18 @@ module Wechat::Core::Common
 
   def assert_present!(name, value)
     raise ArgumentError.new("The #{name} argument is required.") if value.blank?
+  end
+
+  def get_json(link, body: {})
+    assert_present! :link, link
+    message = JSONClient.new.get link, body
+    message.body
+  end
+
+  def post_json(link, body: {})
+    assert_present! :link, link
+    message = JSONClient.new.post link, body
+    message.body
   end
 
 end

@@ -6,9 +6,14 @@
 
 The Wechat Core Library is a code base to call the core Wechat APIs, such as fetching Access Token, and fetching Follower Profile. 微信核心库用于调用微信核心API，例如获取访问令牌，获取关注者的信息。
 
+
+
 ## Recent Update
+
 Check out the [Road Map](ROADMAP.md) to find out what's the next.
 Check out the [Change Log](CHANGELOG.md) to find out what's new.
+
+
 
 ## Installation
 
@@ -26,9 +31,9 @@ Or install it yourself as:
 
     $ gem install wechat-core
 
+
+
 ## Usage
-
-
 
 ### Access Token 访问令牌
 
@@ -40,8 +45,6 @@ if response.present?
   expires_in   = response['expires_in']
 end
 ```
-
-
 
 ### Follower 关注者
 
@@ -123,8 +126,6 @@ else
 end
 ```
 
-
-
 ### Server Address 服务器地址
 
 [Get Server Addresses 获取服务器地址](http://mp.weixin.qq.com/wiki/0/2ad4b6bfd29f30f71d39616c2a0fcedc.html)
@@ -138,8 +139,6 @@ else
   # Show response['errmsg']
 end
 ```
-
-
 
 ### Tiny Link 短链接
 
@@ -161,12 +160,14 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/topbitdu/wechat-core. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

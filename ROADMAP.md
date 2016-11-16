@@ -13,13 +13,14 @@
 2. Follower Profile wrapper class
 
 ## v0.4
-1. Improve the Access Token wrapper class for the argument validation
-2. Improve the Follower wrapper class for the argument validation
-3. Improve the Follower Profile wrapper class for the argument validation
-4. Improve the Server Address wrapper class for the argument validation
-5. Improve the Tiny Link wrapper class for the argument validation
-6. Improve the Access Token wrapper class to deprecate ::load method, use the Access Token ::create method instead
-7. Improve the Common module to add the #get_json method & the #post_json method
+1. Improve the Common module to add the #get_json method & the #post_json method
+2. Improve the Common module to add the #assert_present! method
+3. Improve the Access Token wrapper class for the argument validation
+4. Improve the Follower wrapper class for the argument validation
+5. Improve the Follower Profile wrapper class for the argument validation
+6. Improve the Server Address wrapper class for the argument validation
+7. Improve the Tiny Link wrapper class for the argument validation
+8. Improve the Access Token wrapper class to deprecate ::load method, use the Access Token ::create method instead
 
 ## v1.0
 1. Improve the Follower & Follower Profile wrapper class to support the Keyword Arguments

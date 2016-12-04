@@ -21,7 +21,8 @@ class Wechat::Core::Follower
     options = { access_token: access_token }
     options[:next_openid] = next_open_id if next_open_id.present?
 
-    message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/user/get', options
+    #message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/user/get', options
+    message = get_json 'https://api.weixin.qq.com/cgi-bin/user/get', body: options
     message.body
   end
 

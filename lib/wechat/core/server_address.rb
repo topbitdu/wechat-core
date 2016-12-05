@@ -13,7 +13,8 @@ class Wechat::Core::ServerAddress
 
     assert_present! :access_token, access_token
 
-    message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/getcallbackip', { access_token: access_token }
+    #message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/getcallbackip', { access_token: access_token }
+    message = get_json 'https://api.weixin.qq.com/cgi-bin/getcallbackip', body: { access_token: access_token }
     message.body
   end
 

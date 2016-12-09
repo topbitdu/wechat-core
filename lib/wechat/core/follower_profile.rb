@@ -66,7 +66,7 @@ class Wechat::Core::FollowerProfile
     assert_present! :open_id, open_id
     #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
-    message = ::JSONClient.new.get 'https://api.weixin.qq.com/cgi-bin/user/info',
+    message = get_json 'https://api.weixin.qq.com/cgi-bin/user/info', body:
       {
         access_token: access_token,
         openid:       open_id,

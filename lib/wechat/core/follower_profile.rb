@@ -32,7 +32,6 @@ class Wechat::Core::FollowerProfile
 
     assert_present! :access_token, access_token
     assert_present! :open_ids, open_ids
-    #raise ArgumentError.new('The access_token argument is required.') if access_token.blank?
 
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }
     #message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", { user_list: followers }

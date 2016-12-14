@@ -1,5 +1,3 @@
-require 'jsonclient'
-
 class Wechat::Core::Follower
 
   extend Wechat::Core::Common

@@ -1,5 +1,3 @@
-require 'jsonclient'
-
 class Wechat::Core::ServerAddress
 
   extend Wechat::Core::Common

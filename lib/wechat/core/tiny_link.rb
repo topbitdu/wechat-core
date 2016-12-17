@@ -25,11 +25,6 @@ class Wechat::Core::TinyLink
     assert_present! :access_token, access_token
     assert_present! :link,         link
 
-    #message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/shorturl?access_token=#{access_token}",
-    #  {
-    #    action:   'long2short',
-    #    long_url: link
-    #  }
     message = post_json "https://api.weixin.qq.com/cgi-bin/shorturl?access_token=#{access_token}", body:
       {
         action:   'long2short',

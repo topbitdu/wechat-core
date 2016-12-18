@@ -31,7 +31,7 @@ class Wechat::Core::FollowerProfile
   def self.index(access_token, open_ids, language: Wechat::Core::Common::LANGUAGE_SIMPLIFIED_CHINESE)
 
     assert_present! :access_token, access_token
-    assert_present! :open_ids, open_ids
+    assert_present! :open_ids,     open_ids
 
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }
     #message = ::JSONClient.new.post "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", { user_list: followers }

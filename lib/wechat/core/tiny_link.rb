@@ -1,5 +1,3 @@
-require 'jsonclient'
-
 class Wechat::Core::TinyLink
 
   extend Wechat::Core::Common

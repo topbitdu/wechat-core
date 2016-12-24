@@ -21,3 +21,10 @@
 6. Improve the Server Address wrapper class for the argument validation
 7. Improve the Tiny Link wrapper class for the argument validation
 8. Improve the Access Token wrapper class to deprecate ::load method, use the Access Token ::create method instead
+
+## v0.4.1
+1. Improve the Access Token wrapper class for the HTTP request
+2. Improve the Follower wrapper class for the HTTP request
+3. Improve the Follower Profile wrapper class for the HTTP request
+4. Improve the Server Address wrapper class for the HTTP request
+5. Improve the Tiny Link wrapper class for the HTTP request

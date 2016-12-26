@@ -59,7 +59,7 @@ class Wechat::Core::FollowerProfile
   def self.load(access_token, open_id, language: 'zh_CN')
 
     assert_present! :access_token, access_token
-    assert_present! :open_id, open_id
+    assert_present! :open_id,      open_id
 
     message = get_json 'https://api.weixin.qq.com/cgi-bin/user/info', body:
       {

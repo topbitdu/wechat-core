@@ -4,6 +4,7 @@ class Wechat::Core::AccessToken
 
   extend Wechat::Core::Common
 
+  ##
   # 获取 Access Token
   # http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html
   #

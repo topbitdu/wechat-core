@@ -2,6 +2,7 @@ class Wechat::Core::Follower
 
   extend Wechat::Core::Common
 
+  ##
   # 获取关注者列表
   # http://mp.weixin.qq.com/wiki/0/d0e07720fc711c02a3eab6ec33054804.html
   #

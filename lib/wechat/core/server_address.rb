@@ -2,6 +2,7 @@ class Wechat::Core::ServerAddress
 
   extend Wechat::Core::Common
 
+  ##
   # 获取微信服务器IP地址
   # http://mp.weixin.qq.com/wiki/0/2ad4b6bfd29f30f71d39616c2a0fcedc.html
   #

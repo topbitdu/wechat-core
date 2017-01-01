@@ -2,6 +2,7 @@ class Wechat::Core::TinyLink
 
   extend Wechat::Core::Common
 
+  ##
   # 长链接转短链接接口
   # http://mp.weixin.qq.com/wiki/10/165c9b15eddcfbd8699ac12b0bd89ae6.html
   #

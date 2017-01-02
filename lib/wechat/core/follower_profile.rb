@@ -1,3 +1,6 @@
+##
+# Follower Profile 是关注者画像的远程调用封装类。
+
 class Wechat::Core::FollowerProfile
 
   extend Wechat::Core::Common

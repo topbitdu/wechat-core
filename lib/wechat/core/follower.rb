@@ -1,3 +1,6 @@
+##
+# Follower 是关注者概要信息的远程调用封装类。
+
 class Wechat::Core::Follower
 
   extend Wechat::Core::Common

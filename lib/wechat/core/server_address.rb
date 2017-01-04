@@ -1,3 +1,6 @@
+##
+# Server Address 是服务器地址的远程调用封装类。
+
 class Wechat::Core::ServerAddress
 
   extend Wechat::Core::Common

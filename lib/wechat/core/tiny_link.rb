@@ -1,3 +1,6 @@
+##
+# Tiny Link 是短链接的远程调用封装类。
+
 class Wechat::Core::TinyLink
 
   extend Wechat::Core::Common

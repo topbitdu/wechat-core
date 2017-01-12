@@ -1,6 +1,8 @@
 # Wechat::Core 微信核心库
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/wechat-core/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/wechat-core.svg)](https://badge.fury.io/rb/wechat-core)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/wechat-core.svg)](https://gemnasium.com/github.com/topbitdu/wechat-core)
 

@@ -142,6 +142,9 @@ module Wechat::Core::Common
       9001036 => '查询起始值begin不合法'
     }
 
+  ##
+  # 判断给定的参数 value 是否为空，如果为空，则抛出 ArgumentError 异常。参数名为 name 。例如：
+  # assert_present! :access_token, access_token
   def assert_present!(name, value)
     raise ArgumentError.new("The #{name} argument is required.") if value.blank?
   end

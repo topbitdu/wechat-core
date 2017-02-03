@@ -41,6 +41,7 @@ class Wechat::Core::FollowerProfile
 
   end
 
+  ##
   # 获取用户基本信息(UnionID机制)
   # http://mp.weixin.qq.com/wiki/14/bb5031008f1494a59c6f71fa0f319c66.html#.E8.8E.B7.E5.8F.96.E7.94.A8.E6.88.B7.E5.9F.BA.E6.9C.AC.E4.BF.A1.E6.81.AF.EF.BC.88.E5.8C.85.E6.8B.ACUnionID.E6.9C.BA.E5.88.B6.EF.BC.89
   # 一次拉取调用最多拉取10000个关注者的OpenID，可以通过多次拉取的方式来满足需求。

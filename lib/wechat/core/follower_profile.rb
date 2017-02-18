@@ -61,7 +61,7 @@ class Wechat::Core::FollowerProfile
   #   remark:         <REMARK>,
   #   groupid:        <GROUP_ID>
   # }
-  def self.load(access_token, open_id, language: 'zh_CN')
+  def self.load(access_token, open_id, language: Wechat::Core::Common::LANGUAGE_SIMPLIFIED_CHINESE)
 
     assert_present! :access_token, access_token
     assert_present! :open_id,      open_id

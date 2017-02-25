@@ -1,5 +1,8 @@
 require 'jsonclient'
 
+##
+# Access Token 是访问令牌的远程调用封装类。
+
 class Wechat::Core::AccessToken
 
   extend Wechat::Core::Common

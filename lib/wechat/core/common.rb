@@ -149,6 +149,9 @@ module Wechat::Core::Common
     raise ArgumentError.new("The #{name} argument is required.") if value.blank?
   end
 
+  ##
+  # 向链接 link 发出 GET 请求，参数为 body 指定的 Hash。返回的数据结构必须为 JSON 格式。如：
+  # get_json 'https://api.product.com/path/resources.json', body: { page: 2, per_page: 5 }
   def get_json(link, body: {})
     assert_present! :link, link
     message = JSONClient.new.get link, body

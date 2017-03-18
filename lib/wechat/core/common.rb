@@ -158,6 +158,9 @@ module Wechat::Core::Common
     message.body
   end
 
+  ##
+  # 向链接 link 发出 GET 请求，参数为 body 指定的 Hash。返回的数据结构必须为 JSON 格式。如：
+  # post_json 'https://api.product.com/path/resources.json', body: { name: 'Some Name' }
   def post_json(link, body: {})
     assert_present! :link, link
     message = JSONClient.new.post link, body

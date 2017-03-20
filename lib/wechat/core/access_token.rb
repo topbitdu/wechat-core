@@ -42,13 +42,12 @@ class Wechat::Core::AccessToken
     assert_present! :app_id,     app_id
     assert_present! :app_secret, app_secret
 
-    message = get_json 'https://api.weixin.qq.com/cgi-bin/token', body:
+    get_json 'https://api.weixin.qq.com/cgi-bin/token', body:
       {
         grant_type: 'client_credential',
         appid:      app_id,     # Rails.application.secrets.wechat_app_id,
         secret:     app_secret, # Rails.application.secrets.wechat_app_secret
       }
-    message.body
   end
 
   class << self

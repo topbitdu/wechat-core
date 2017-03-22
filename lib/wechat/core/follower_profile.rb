@@ -65,13 +65,12 @@ class Wechat::Core::FollowerProfile
     assert_present! :access_token, access_token
     assert_present! :open_id,      open_id
 
-    message = get_json 'https://api.weixin.qq.com/cgi-bin/user/info', body:
+    get_json 'https://api.weixin.qq.com/cgi-bin/user/info', body:
       {
         access_token: access_token,
         openid:       open_id,
         lang:         language
       }
-    message.body
   end
 
 end

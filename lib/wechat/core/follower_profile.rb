@@ -36,7 +36,10 @@ class Wechat::Core::FollowerProfile
     assert_present! :open_ids,     open_ids
 
     followers = open_ids.map { |open_id| { openid: open_id, lang: language } }
-    post_json "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", body: { user_list: followers }
+    post_json "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=#{access_token}", body:
+      {
+        user_list: followers
+      }
 
   end
 

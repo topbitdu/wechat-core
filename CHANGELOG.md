@@ -13,7 +13,7 @@
 2. Follower Profile wrapper class
 
 ## v0.4
-1. Improve the Common module to add the #get_json method & the #post_json method
+1. Improved the Common module to add the #get_json method & the #post_json method
 2. Improve the Common module to add the #assert_present! method
 3. Improve the Access Token wrapper class for the argument validation
 4. Improve the Follower wrapper class for the argument validation

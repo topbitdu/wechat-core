@@ -17,7 +17,7 @@
 2. Improved the Common module to add the #assert_present! method
 3. Improved the Access Token wrapper class for the argument validation
 4. Improved the Follower wrapper class for the argument validation
-5. Improve the Follower Profile wrapper class for the argument validation
+5. Improved the Follower Profile wrapper class for the argument validation
 6. Improve the Server Address wrapper class for the argument validation
 7. Improve the Tiny Link wrapper class for the argument validation
 8. Improve the Access Token wrapper class to deprecate ::load method, use the Access Token ::create method instead
